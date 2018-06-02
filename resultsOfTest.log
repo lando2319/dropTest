@@ -1,0 +1,34 @@
+
+db triggered 1000 records
+PROCESS: ./functions/index.js
+set countThis to PROCESSING
+set countThis to 1
+set countThis to 2
+set countThis to 3
+set countThis to 4
+set countThis to DONE
+
+
+
+
+TEST 1:
+initiated at 12:49 CST 2018-06-02
+
+check record still processing at 12:59 CST 2018-06-02
+
+
+RESULT:
+
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz680
+record stuck at
+countThis 4
+
+
+
+
+
+
+
+
+

@@ -12,12 +12,11 @@ admin.initializeApp({
 });
 
 const firestore = admin.firestore();
-const deleteActual = admin.firestore.FieldValue.delete();
 
 var userQueue = async.queue(function(userDocID, finalCallback) {
     console.log("\n>>>> Beginning Process For " + userDocID);
 
-    firestore.collection("users").doc(userDocID).set({countIs:deleteActual}).then(function() {
+    firestore.collection("users").doc(userDocID).set({countThis:"PENDING"}).then(function() {
         console.log("Successfully Saved User Info to Database");
         finalCallback();
     }).catch(function(error) {
