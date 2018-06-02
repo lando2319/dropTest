@@ -14,8 +14,10 @@ set countThis to DONE
 TEST 1:
 initiated at 12:49 CST 2018-06-02
 
-check record still processing at 12:59 CST 2018-06-02
+check record still processing at 12:57 CST 2018-06-02
 
+Errors Logged: 0
+Records Dropped:1
 
 RESULT:
 
@@ -25,9 +27,24 @@ record stuck at
 countThis 4
 
 
+>>>>>>>>>
+
+TEST 2:
+initiated at 12:58 CST 2018-06-02
+
+check record still processing at 13:05 CST 2018-06-02
+
+Errors Logged: 0
+Records Dropped:1
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz181
+record stuck at
+countThis 2
 
 
-
+>>>>>>>>>
 
 
 
