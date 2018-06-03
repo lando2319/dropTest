@@ -90,3 +90,82 @@ exports.countDropTest = functions.firestore.document('users/{userId}').onUpdate(
    }
 })
 
+exports.callOnce = functions.firestore.document('users/{userId}').onUpdate((change, context) => {
+   if (change.after.data().callOnce == "PENDING") {
+       let uid = context.params.userId;
+       try {
+           async.waterfall([
+               function(mainCallback) {
+                   try {
+                       change.after.ref.update({"callOnce":"PROCESSING"}).then(function() {
+                           console.log("dropTest UID:", uid, "successfully set to processing");
+                           return mainCallback();
+                       }).catch(function(error) {
+                           return console.log("dropTest UID:", uid, "Firebase Error step 1: ", error);
+                       });
+                   } catch(error) {
+                       console.error("dropTest field update catchError step 1", error);
+                   }
+               },
+               function(mainCallback) {
+                   console.log("JUST CALL ONCE");
+                   try {
+                       change.after.ref.update({"countThis":"DONE"}).then(function() {
+                           console.log("dropTest UID:", uid, "successfully set to 1");
+                           return mainCallback();
+                       }).catch(function(error) {
+                           return console.log("dropTest UID:", uid, "Firebase Error step 2: ", error);
+                       });
+                   } catch(error) {
+                       console.error("dropTest catchError step 2", error);
+                   }
+               },
+           ]);
+       } catch(error) {
+           console.error("outside catchError", error);
+       }
+   } else {
+       return null
+   }
+})
+
+
+exports.callOnceWithProtection = functions.firestore.document('users/{userId}').onUpdate((change, context) => {
+   if (change.before.data().callOnceWithProtection != "PENDING" && change.after.data().callOnceWithProtection == "PENDING") {
+       let uid = context.params.userId;
+       try {
+           async.waterfall([
+               function(mainCallback) {
+                   try {
+                       change.after.ref.update({"callOnce":"PROCESSING"}).then(function() {
+                           console.log("dropTest UID:", uid, "successfully set to processing");
+                           return mainCallback();
+                       }).catch(function(error) {
+                           return console.log("dropTest UID:", uid, "Firebase Error step 1: ", error);
+                       });
+                   } catch(error) {
+                       console.error("dropTest field update catchError step 1", error);
+                   }
+               },
+               function(mainCallback) {
+                   console.log("JUST CALL ONCE");
+                   try {
+                       change.after.ref.update({"countThis":"DONE"}).then(function() {
+                           console.log("dropTest UID:", uid, "successfully set to 1");
+                           return mainCallback();
+                       }).catch(function(error) {
+                           return console.log("dropTest UID:", uid, "Firebase Error step 2: ", error);
+                       });
+                   } catch(error) {
+                       console.error("dropTest catchError step 2", error);
+                   }
+               },
+           ]);
+       } catch(error) {
+           console.error("outside catchError", error);
+       }
+   } else {
+       return null
+   }
+})
+
