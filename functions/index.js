@@ -5,13 +5,13 @@ const functions = require('firebase-functions');
 const async = require("async");
 
 exports.countDropTest = functions.firestore.document('users/{userId}').onUpdate((change, context) => {
-   if (change.after.data().countThis == "PENDING") {
+   if (change.after.data().countThis == "APENDING") {
        let uid = context.params.userId;
        try {
            async.waterfall([
                function(mainCallback) {
                    try {
-                       change.after.ref.update({"countThis":"PROCESSING"}).then(function() {
+                       change.after.ref.update({"countThis":"0"}).then(function() {
                            console.log("dropTest UID:", uid, "successfully set to processing");
                            return mainCallback();
                        }).catch(function(error) {

@@ -16,7 +16,7 @@ const firestore = admin.firestore();
 var userQueue = async.queue(function(userDocID, finalCallback) {
     console.log("\n>>>> Beginning Process For " + userDocID);
 
-    firestore.collection("users").doc(userDocID).set({countThis:"PENDING"}).then(function() {
+    firestore.collection("users").doc(userDocID).set({countThis:"APENDING"}).then(function() {
         console.log("Successfully Saved User Info to Database");
         finalCallback();
     }).catch(function(error) {
