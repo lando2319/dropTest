@@ -214,3 +214,111 @@ Records Dropped: 0
 RESULT:
 
 
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>>
+TEST WITH CALLBACK HELL V2
+
+
+TEST 1:
+initiated at 21:53 CST 2018-06-04
+
+check records still processing at 21:58 CST 2018-06-04
+
+Errors Logged: 0
+Records Dropped: 1
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz703
+countThis 4
+recordCount 1
+
+>>>>>>>>>
+
+
+TEST 2:
+initiated at 22:00 CST 2018-06-04
+
+check records still processing at 22:05 CST 2018-06-04
+
+Errors Logged: 0
+Records Dropped: 0
+
+RESULT:
+
+
+>>>>>>>>>
+
+
+TEST 3:
+initiated at 22:05 CST 2018-06-04
+
+check records still processing at 22:10 CST 2018-06-04
+
+Errors Logged: 11
+Records Dropped: 0
+
+RESULT:
+
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz701
+countThis 0
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz776
+countThis 0
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz824
+countThis 0
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz33
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz330
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz747
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz751
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz796
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz822
+countThis APENDING
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz894
+countThis APENDING
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz901
+countThis APENDING
+recordCount 11
+
+
+>>>>>>>>>
+
+
+TEST 4:
+initiated at 22:14 CST 2018-06-04
+
+check records still processing at 22:19 CST 2018-06-04
+
+Errors Logged: 3
+Records Dropped: 0
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz137
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz135
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz104
+countThis 4
+recordCount 3
+
+
+
+>>>>>>>>>
+
+
+TEST 5:
+initiated at 22:20 CST 2018-06-04
+
+check records still processing at 22:21 CST 2018-06-04
+
+Errors Logged: 0
+Records Dropped: 0
+
+RESULT:
