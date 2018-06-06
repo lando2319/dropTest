@@ -8,7 +8,7 @@ exports.countDropTest = functions.firestore.document('users/{userId}').onUpdate(
        let uid = context.params.userId;
 
        try {
-           change.after.ref.update({"countThis":"0"}).then(function() {
+           return change.after.ref.update({"countThis":"0"}).then(function() {
                console.log("dropTest UID:", uid, "successfully set to processing");
                try {
                    change.after.ref.update({"countThis":"1"}).then(function() {
@@ -25,7 +25,7 @@ exports.countDropTest = functions.firestore.document('users/{userId}').onUpdate(
                                                try {
                                                    change.after.ref.update({"countThis":"DONE"}).then(function() {
                                                        console.log("dropTest UID:", uid, "successfully set to DONE");
-                                                       return console.log("DONE");
+                                                       console.log("DONE");
                                                    }).catch(function(error) {
                                                        return console.log("dropTest UID:", uid, "Firebase Error step 6: ", error);
                                                    });
