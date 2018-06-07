@@ -20,9 +20,11 @@ exports.countDropTest = functions.firestore.document('users/{userId}').onUpdate(
                                    change.after.ref.update({"countThis":"3"}).then(function() {
                                        console.log("dropTest UID:", uid, "successfully set to 3");
                                        try {
+                                           sleep(3000);
                                            change.after.ref.update({"countThis":"4"}).then(function() {
                                                console.log("dropTest UID:", uid, "successfully set to 4");
                                                try {
+                                                   sleep(3000);
                                                    change.after.ref.update({"countThis":"DONE"}).then(function() {
                                                        console.log("dropTest UID:", uid, "successfully set to DONE");
                                                        console.log("DONE");
@@ -64,4 +66,13 @@ exports.countDropTest = functions.firestore.document('users/{userId}').onUpdate(
        }
    }
 })
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
 

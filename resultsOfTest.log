@@ -322,3 +322,194 @@ Errors Logged: 0
 Records Dropped: 0
 
 RESULT:
+
+
+
+
+>>>>>>>>>
+
+
+TEST 1:
+initiated at 06:38 CST 2018-06-07
+
+check records still processing at 06:38 CST 2018-06-07
+
+Errors Logged: 0
+Records Dropped: 32
+
+RESULT:
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz236
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz347
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz490
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz8
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz841
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz952
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz979
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz989
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz194
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz271
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz283
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz346
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz943
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz232
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz273
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz291
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz322
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz374
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz406
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz636
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz888
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz91
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz221
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz24
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz300
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz304
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz315
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz376
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz383
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz384
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz475
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz668
+countThis 4
+recordCount 32
+
+
+
+
+>>>>>>>>>
+
+
+TEST 2:
+initiated at 06:39 CST 2018-06-07
+
+check records still processing at 06:44 CST 2018-06-07
+
+Errors Logged: 0
+Records Dropped: 7
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz363
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz353
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz390
+countThis 4
+recordCount 3
+
+
+
+>>>>>>>>>
+
+
+TEST 3:
+initiated at 06:45 CST 2018-06-07
+
+check records still processing at 06:50 CST 2018-06-07
+
+Errors Logged: 0
+Records Dropped: 7
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz159
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz409
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz454
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz281
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz189
+countThis 3
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz146
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz185
+countThis 4
+recordCount 7
+
+
+
+>>>>>>>>>
+
+
+TEST 4:
+initiated at 06:51 CST 2018-06-07
+
+check records still processing at 07:00 CST 2018-06-07
+
+Errors Logged: 0
+Records Dropped: 3
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz198
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz201
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz271
+countThis 3
+recordCount 3
+
+
+>>>>>>>>>
+
+
+TEST 5:
+initiated at 07:01 CST 2018-06-07
+
+check records still processing at 07:06 CST 2018-06-07
+
+Errors Logged: 0
+Records Dropped: 8
+
+RESULT:
+
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz148
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz192
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz312
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz548
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz645
+countThis 1
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz629
+countThis 2
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz185
+countThis 4
+uid zzzzzzzzzzzzzzzzzzzzzzzzzzzz621
+countThis 4
+recordCount 8
